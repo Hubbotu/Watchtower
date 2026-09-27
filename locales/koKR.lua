@@ -14,23 +14,23 @@ local L = app.locales
 -- L.INVALID_COMMAND =                      "Invalid command"
 
 -- Settings
--- L.SETTINGS_VERSION =                     GAME_VERSION_LABEL .. ":" -- "Version"
--- L.SETTINGS_SUPPORT_TEXTLONG1 =           "Developing this addon takes a significant amount of time and effort."
--- L.SETTINGS_SUPPORT_TEXTLONG2 =           "Please consider financially supporting the developer."
--- L.SETTINGS_SUPPORT_TEXT =                "Support"
--- L.SETTINGS_SUPPORT_BUTTON =              "Buy Me a Coffee" -- Brand name, if there isn't a localised version, keep it the way it is
--- L.SETTINGS_SUPPORT_DESC =                "Thank you!"
--- L.SETTINGS_HELP_TEXT =                   "Feedback & Help"
--- L.SETTINGS_HELP_BUTTON =                 "Discord" -- Brand name, if there isn't a localised version, keep it the way it is
--- L.SETTINGS_HELP_DESC =                   "Join the Discord server."
--- L.SETTINGS_URL_COPY =                    "Ctrl+C to copy:"
--- L.SETTINGS_URL_COPIED =                  "Link copied to clipboard"
+-- L.VERSION =                              GAME_VERSION_LABEL .. ":" -- "Version"
+-- L.SUPPORT_TEXTLONG1 =                    "Developing this addon takes a significant amount of time and effort."
+-- L.SUPPORT_TEXTLONG2 =                    "Please consider financially supporting the developer."
+-- L.SUPPORT =                              "Support"
+-- L.BUY_ME_A_COFFEE =                      "Buy Me a Coffee" -- Brand name, if there isn't a localised version, keep it the way it is
+-- L.THANK_YOU =                            "Thank you!"
+-- L.FEEDBACK_AND_HELP =                    "Feedback & Help"
+-- L.DISCORD =                              "Discord" -- Brand name, if there isn't a localised version, keep it the way it is
+-- L.JOIN_DISCORD_SERVER =                  "Join the Discord server."
+-- L.CTRL_C_COPY =                          "Ctrl+C to copy:"
+-- L.LINK_COPIED =                          "Link copied to clipboard"
 
--- L.SETTINGS_KEYSLASH_TITLE =              SETTINGS_KEYBINDINGS_LABEL .. " & Slash Commands" -- "Keybindings"
+-- L.KEYBINDINGS_AND_SLASH_COMMANDS =       SETTINGS_KEYBINDINGS_LABEL .. " & Slash Commands" -- "Keybindings"
 -- _G["BINDING_NAME_WATCHTOWER_TOGGLE"] =   app.NameShort .. ": Toggle Edit Panel"
--- L.SLASH_OR =                             "or"
--- L.SLASH_TOGGLE_EDITPANEL =               "Toggle the edit panel"
--- L.SLASH_OPEN_SETTINGS =                  "Open the settings"
+-- L.OR =                                   "or"
+-- L.TOGGLE_EDIT_PANEL =                    "Toggle the edit panel"
+-- L.OPEN_SETTINGS =                        "Open the settings"
 
 -- L.GENERAL =                              GENERAL -- "General"
 -- L.SHOW_MINIMAP_ICON =                    "Show Minimap Icon"
@@ -84,7 +84,7 @@ local L = app.locales
 -- L.STYLE =                                "Style"
 -- L.GROUP_STYLE = {}
 -- L.GROUP_STYLE[1] =                       "Icons and Text"
--- L.GROUP_STYLE[2] =                       "|cff9d9d9dIcons Only (Soon™)"
+-- L.GROUP_STYLE[2] =                       "|cff9D9D9DIcons Only (Soon™)"
 -- L.ANCHOR =                               "Anchor"
 -- L.GROUP_ANCHOR = {}
 -- L.GROUP_ANCHOR[1] =                      "Top Left"

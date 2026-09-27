@@ -255,7 +255,7 @@ function app:CreateEditPanel()
 		listItem.Highlight:Hide()
 
 		if data.groupID == 1 and data.flagID ~= 0 then
-			listItem.LeftText2:SetText("|cff9d9d9d" .. data.title)
+			listItem.LeftText2:SetText("|cff9D9D9D" .. data.title)
 		end
 
 		if app.FlagsList.SelGroup == data.groupID and app.FlagsList.SelFlag == data.flagID then

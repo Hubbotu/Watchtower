@@ -14,23 +14,23 @@ L.NEW_VERSION_AVAILABLE =                "Доступна новая верси
 L.INVALID_COMMAND =                      "Неверная команда"
 
 -- Settings
-L.SETTINGS_VERSION =                     GAME_VERSION_LABEL .. ":" -- "Version"
-L.SETTINGS_SUPPORT_TEXTLONG1 =           "Разработка этого аддона требует значительного времени и усилий."
-L.SETTINGS_SUPPORT_TEXTLONG2 =           "Пожалуйста, рассмотрите возможность финансовой поддержки разработчика."
-L.SETTINGS_SUPPORT_TEXT =                "Поддержать"
-L.SETTINGS_SUPPORT_BUTTON =              "Buy Me a Coffee" -- Brand name, if there isn't a localised version, keep it the way it is
-L.SETTINGS_SUPPORT_DESC =                "Спасибо!"
-L.SETTINGS_HELP_TEXT =                   "Обратная связь и помощь"
-L.SETTINGS_HELP_BUTTON =                 "Discord" -- Brand name, if there isn't a localised version, keep it the way it is
-L.SETTINGS_HELP_DESC =                   "Присоединиться к серверу Discord."
-L.SETTINGS_URL_COPY =                    "Ctrl+C — скопировать:"
-L.SETTINGS_URL_COPIED =                  "Ссылка скопирована в буфер обмена"
+L.VERSION =                              GAME_VERSION_LABEL .. ":" -- "Version"
+L.SUPPORT_TEXTLONG1 =                    "Разработка этого аддона требует значительного времени и усилий."
+L.SUPPORT_TEXTLONG2 =                    "Пожалуйста, рассмотрите возможность финансовой поддержки разработчика."
+L.SUPPORT =                              "Поддержать"
+L.BUY_ME_A_COFFEE =                      "Buy Me a Coffee" -- Brand name, if there isn't a localised version, keep it the way it is
+L.THANK_YOU =                            "Спасибо!"
+L.FEEDBACK_AND_HELP =                    "Обратная связь и помощь"
+L.DISCORD =                              "Discord" -- Brand name, if there isn't a localised version, keep it the way it is
+L.JOIN_DISCORD_SERVER =                  "Присоединиться к серверу Discord."
+L.CTRL_C_COPY =                          "Ctrl+C — скопировать:"
+L.LINK_COPIED =                          "Ссылка скопирована в буфер обмена"
 
-L.SETTINGS_KEYSLASH_TITLE =              SETTINGS_KEYBINDINGS_LABEL .. " & Слэш-команды" -- "Keybindings"
+L.KEYBINDINGS_AND_SLASH_COMMANDS =       SETTINGS_KEYBINDINGS_LABEL .. " & Слэш-команды" -- "Keybindings"
 _G["BINDING_NAME_WATCHTOWER_TOGGLE"] =   app.NameShort .. ": Включить панель редактирования"
-L.SLASH_OR =                             "или"
-L.SLASH_TOGGLE_EDITPANEL =               "Включить панель редактирования"
-L.SLASH_OPEN_SETTINGS =                  "Откройте настройки"
+L.OR =                                   "или"
+L.TOGGLE_EDIT_PANEL =                    "Включить панель редактирования"
+L.OPEN_SETTINGS =                        "Откройте настройки"
 
 L.GENERAL =                              GENERAL -- "General"
 L.SHOW_MINIMAP_ICON =                    "Показывать иконку на миникарте"
@@ -84,7 +84,7 @@ L.OVERWRITE_FLAG =                       "Перезаписать текущи�
 L.STYLE =                                "Стиль"
 L.GROUP_STYLE = {}
 L.GROUP_STYLE[1] =                       "Иконки и текст"
-L.GROUP_STYLE[2] =                       "|cff9d9d9dТолько иконки (в разработке™)"
+L.GROUP_STYLE[2] =                       "|cff9D9D9DТолько иконки (в разработке™)"
 L.ANCHOR =                               "Точка привязки"
 L.GROUP_ANCHOR = {}
 L.GROUP_ANCHOR[1] =                      "Верхний левый"

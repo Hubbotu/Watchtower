@@ -47,7 +47,7 @@ app.Event:Register("ADDON_LOADED", function(addOnName, containsBindings)
 			{ groupID = 2, scale = 100, anchor = 3, style = 1, font = "Friz Quadrata TT", title = L.NEW_GROUP, flags = {
 				{ flagID = 1, events = { "PLAYER_ENTERING_WORLD" }, lastResult = false, icon = 134400, load = {}, actions = {},
 				title = L.TUTORIAL_EXAMPLE_TITLE2,
-				trigger = "-- " .. L.TUTORIAL_TRIGGER1 .. "\nlocal event, isInitialLogin, isReloadingUi = ...\n\nif event == \"PLAYER_ENTERING_WORLD\" then\n   print(\"|cff3FC7EBWatchtower|R " .. TEST_STRING_IGNORE_1 .. "\")\nend\n\n-- " .. L.TUTORIAL_VISIBILITY1 .. "\nreturn false", },
+				trigger = "-- " .. L.TUTORIAL_TRIGGER1 .. "\nlocal event, isInitialLogin, isReloadingUi = ...\n\nif event == \"PLAYER_ENTERING_WORLD\" then\n   print(\"|cff3FC7EBWatchtower|r " .. TEST_STRING_IGNORE_1 .. "\")\nend\n\n-- " .. L.TUTORIAL_VISIBILITY1 .. "\nreturn false", },
 				{ flagID = 2,
 				events = { "PLAYER_ENTERING_WORLD" }, lastResult = true, icon = 134400, load = {}, actions = {},
 				title = L.TUTORIAL_EXAMPLE_SETTINGS,
@@ -160,7 +160,7 @@ end
 function Watchtower_Enter(self, button)
 	GameTooltip:ClearLines()
 	GameTooltip:SetOwner(type(self) ~= "string" and self or button, "ANCHOR_LEFT")
-	GameTooltip:AddLine(app.NameLong .. "\n|cffFFFFFF" .. app.IconLMB .. ": " .. L.SLASH_TOGGLE_EDITPANEL .. "\n" .. app.IconRMB .. ": " .. L.SLASH_OPEN_SETTINGS)
+	GameTooltip:AddLine(app.NameLong .. "\n|cffFFFFFF" .. app.IconLMB .. ": " .. L.TOGGLE_EDIT_PANEL .. "\n" .. app.IconRMB .. ": " .. L.OPEN_SETTINGS)
 	GameTooltip:Show()
 end
 

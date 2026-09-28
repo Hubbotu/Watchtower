@@ -37,6 +37,7 @@ _[Game].lua
 Database.lua
 Settings.lua
 FrameTemplates.xml
+modules\AprilFools.lua
 modules\EditPanel.lua
 modules\ImportExport.lua
 modules\Trackers.lua

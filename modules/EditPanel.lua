@@ -45,8 +45,8 @@ function app:CreateEditPanel()
 	app.EditPanel:SetClampedToScreen(true)
 	app.EditPanel:SetClampRectInsets(app.EditPanel:GetWidth()-inset, -(app.EditPanel:GetWidth()-inset), -(app.EditPanel:GetHeight()-inset), app.EditPanel:GetHeight()-inset)
 	app.EditPanel:RegisterForDrag("LeftButton")
-	app.EditPanel:SetScript("OnDragStart", function() app.EditPanel:StartMoving() end)
-	app.EditPanel:SetScript("OnDragStop", function() app.EditPanel:StopMovingOrSizing() end)
+	app.EditPanel:SetScript("OnDragStart", function() app:StartMoving() end)
+	app.EditPanel:SetScript("OnDragStop", function() app:StopMoving() end)
 	app.EditPanel:SetTitle(app.NameLong)
 	app.EditPanel:Hide()
 
@@ -56,6 +56,7 @@ function app:CreateEditPanel()
 	end)
 
 	app.EditPanel:SetScript("OnShow", function()
+		C_Timer.After(1, function() app.Gravity:StartGravity(app.EditPanel) end)
 		for id = 2, #app.Flags do
 			app.Tracker[id].window:EnableMouse(true)
 			app.Tracker[id].window.corner:Show()
@@ -196,8 +197,8 @@ function app:CreateEditPanel()
 	scrollBox:SetPoint("BOTTOMRIGHT", app.EditPanel.StatusList, -18, 4)
 	scrollBox:EnableMouse(true)
 	scrollBox:RegisterForDrag("LeftButton")
-	scrollBox:SetScript("OnDragStart", function() app.EditPanel:StartMoving() end)
-	scrollBox:SetScript("OnDragStop", function() app.EditPanel:StopMovingOrSizing() end)
+	scrollBox:SetScript("OnDragStart", function() app:StartMoving() end)
+	scrollBox:SetScript("OnDragStop", function() app:StopMoving() end)
 
 	local scrollBar = CreateFrame("EventFrame", nil, app.EditPanel.StatusList, "MinimalScrollBar")
 	scrollBar:SetPoint("TOPLEFT", scrollBox, "TOPRIGHT")
@@ -1079,6 +1080,16 @@ function app:CreateEditPanel()
 	app.FlagsList.SelFlag = 0
 	app:SetSelected()
 	app:UpdateStatusList()
+end
+
+function app:StartMoving()
+	app.EditPanel:StartMoving()
+	app.Gravity:StartDragging(app.EditPanel)
+end
+
+function app:StopMoving()
+	app.EditPanel:StopMovingOrSizing()
+	app.Gravity:StopDragging(app.EditPanel)
 end
 
 function app:SetSelected()

@@ -38,6 +38,12 @@ end)
 
 app.Event:Register("ADDON_LOADED", function(addOnName, containsBindings)
 	if addOnName == appName then
+		if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE then
+			app.Retail = true
+		elseif WOW_PROJECT_ID == WOW_PROJECT_CAMELOT then
+			app.Forever = true
+		end
+
 		Watchtower_Flags = Watchtower_Flags or {
 			{ groupID = 1, title = L.INACTIVE, flags = {
 				{ flagID = 1, events = { "GLOBAL_MOUSE_DOWN" }, lastResult = true, icon = 134400, load = {}, actions = {},

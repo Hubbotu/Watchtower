@@ -108,8 +108,8 @@ function app:RegisterEvents(flag)
 			flg.lastResult = false
 		end
 
-		local wrapper = function(...)
-			local ok, result = xpcall(func, function(err) return triggerErrorHandler(err, flg, event) end, ...)
+		local wrapper = function(event, ...)
+			local ok, result = xpcall(func, function(err) return triggerErrorHandler(err, flg, event) end, event, ...)
 			if not ok then
 				flg.lastResult = false
 				error(result, 0)

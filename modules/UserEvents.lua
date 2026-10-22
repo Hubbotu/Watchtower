@@ -6,17 +6,6 @@ local appName, app = ...
 local api = app.api
 local L = app.locales
 
--------------
--- ON LOAD --
--------------
-
-app.Event:Register("ADDON_LOADED", function(addOnName, containsBindings)
-	if addOnName == appName then
-		app:CreateImportPopup()
-		app:CreateExportPopup()
-	end
-end)
-
 ------------------------
 -- USER EVENT HANDLER --
 ------------------------

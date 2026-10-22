@@ -100,6 +100,7 @@ function api:Import(importString)
 	elseif importType == "group" then
 		for i, flag in ipairs(data.flags) do
 			_, error = checkFlag(flag)
+			if error then break end
 		end
 	else
 		app:Print(L.IMPORT_ERROR, L.ERROR_INVALID_IMPORT_STRING)

@@ -1,6 +1,6 @@
------------------------------
--- Watchtower: Tracker.lua --
------------------------------
+------------------------------
+-- Watchtower: Trackers.lua --
+------------------------------
 
 local appName, app = ...
 local api = app.api

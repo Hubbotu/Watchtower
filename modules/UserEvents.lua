@@ -1,6 +1,6 @@
--------------------------------
--- Watchtower: EditPanel.lua --
--------------------------------
+--------------------------------
+-- Watchtower: UserEvents.lua --
+--------------------------------
 
 local appName, app = ...
 local api = app.api

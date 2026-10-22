@@ -1,6 +1,6 @@
--------------------------------
--- Watchtower: EditPanel.lua --
--------------------------------
+----------------------------------
+-- Watchtower: ImportExport.lua --
+----------------------------------
 
 local appName, app = ...
 local api = app.api

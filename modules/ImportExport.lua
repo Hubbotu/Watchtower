@@ -89,7 +89,7 @@ function api:Import(importString)
 	local function checkFlag(flg)
 		local safe = app:IsTriggerSafe(flg)
 		if not safe then
-			local err = L.IMPORT_ERROR, string.format(L.ERROR_BLOCKED, flg.title)
+			local err = L.IMPORT_ERROR .. " " .. string.format(L.ERROR_BLOCKED, flg.title)
 			return false, err
 		end
 		return true

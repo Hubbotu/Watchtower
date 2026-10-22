@@ -61,6 +61,7 @@ L.SHOW_MINIMAP_ICON_DESC =               "Muestra el icono del minimapa. Si desa
 -- L.TUTORIAL_VISIBILITY =                  "Visibility"
 -- L.TUTORIAL_VISIBILITY1 =                 "Code that returns falsy hides the flag:"
 -- L.TUTORIAL_VISIBILITY2 =                 "Code that returns truthy shows the flag:"
+-- L.TEST =                                 TEST_STRING_IGNORE_1 -- "Test"
 -- L.TUTORIAL_TITLE =                       "Flag title"
 -- L.TUTORIAL_TITLE1 =                      "Code returning a number or string will set the flag's title to that value."
 -- L.TUTORIAL_WHAT =                        "I don't know what any of this means! D:"

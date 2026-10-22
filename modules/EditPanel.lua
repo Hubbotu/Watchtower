@@ -401,7 +401,7 @@ function app:CreateEditPanel()
 	string11:SetFont("Interface\\AddOns\\Watchtower\\assets\\courbd.ttf", 14, "")
 	string11:SetJustifyH("LEFT")
 	string11:SetPoint("TOPLEFT", string10, "BOTTOMLEFT", 10, -3)
-	string11:SetText("|cffFFFFFFreturn true\nreturn 1337\nreturn \"" .. TEST_STRING_IGNORE_1 .. "\"")
+	string11:SetText("|cffFFFFFFreturn true\nreturn 1337\nreturn \"" .. L.TEST .. "\"")
 
 	local string12 = app.EditPanel.Pages[10]:CreateFontString(nil, "ARTWORK", "SystemFont_Shadow_Med2_Outline")
 	string12:SetPoint("TOPLEFT", string11, "BOTTOMLEFT", -13, -11)

@@ -53,7 +53,7 @@ app.Event:Register("ADDON_LOADED", function(addOnName, containsBindings)
 			{ groupID = 2, scale = 100, anchor = 3, style = 1, font = "Friz Quadrata TT", title = L.NEW_GROUP, flags = {
 				{ flagID = 1, events = { "PLAYER_ENTERING_WORLD" }, lastResult = false, icon = 134400, load = {}, actions = {},
 				title = L.TUTORIAL_EXAMPLE_TITLE2,
-				trigger = "-- " .. L.TUTORIAL_TRIGGER1 .. "\nlocal event, isInitialLogin, isReloadingUi = ...\n\nif event == \"PLAYER_ENTERING_WORLD\" then\n   print(\"|cff3FC7EBWatchtower|r " .. TEST_STRING_IGNORE_1 .. "\")\nend\n\n-- " .. L.TUTORIAL_VISIBILITY1 .. "\nreturn false", },
+				trigger = "-- " .. L.TUTORIAL_TRIGGER1 .. "\nlocal event, isInitialLogin, isReloadingUi = ...\n\nif event == \"PLAYER_ENTERING_WORLD\" then\n   print(\"|cff3FC7EBWatchtower|r " .. L.TEST .. "\")\nend\n\n-- " .. L.TUTORIAL_VISIBILITY1 .. "\nreturn false", },
 				{ flagID = 2,
 				events = { "PLAYER_ENTERING_WORLD" }, lastResult = true, icon = 134400, load = {}, actions = {},
 				title = L.TUTORIAL_EXAMPLE_SETTINGS,

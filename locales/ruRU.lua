@@ -61,6 +61,7 @@ L.TUTORIAL_TRIGGER2 =                    "Код выполняется неза
 L.TUTORIAL_VISIBILITY =                  "Видимость"
 L.TUTORIAL_VISIBILITY1 =                 "Код, возвращающий ложное значение, скрывает флаг:"
 L.TUTORIAL_VISIBILITY2 =                 "Код, возвращающий истинное значение, отображает флаг:"
+-- L.TEST =                                 TEST_STRING_IGNORE_1 -- "Test"
 L.TUTORIAL_TITLE =                       "Название флага"
 L.TUTORIAL_TITLE1 =                      "Код, возвращающий число или строку, установит заголовок флага в это значение."
 L.TUTORIAL_WHAT =                        "Я ничего из этого не понимаю! D:"
